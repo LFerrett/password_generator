@@ -26,7 +26,7 @@ function generatePassword() {
 // Turns the user input into a number
   userSize = parseInt(userSize);
 
-// Runs a while loop to check to see which characters are in the user selections, also adds those characters to the password, stops the code through a break if the criteria is met
+// Runs a while loop that runs until the desired password length is created. It functions to check to see which characters are in the user selections, also adds those characters to the password, stops the code through a break if the criteria is met
 while (userPass.length!==userSize) {
   if (userSpecial == true) {
     userPass = userPass + (specialCharacters[Math.floor(Math.random()*(specialCharacters.length-1))])
